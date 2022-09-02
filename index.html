@@ -5,23 +5,65 @@
     crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link href="css/reset.css" rel="stylesheet">
 
 <head>
     <meta charset="utf-8" />
     <title>Marco's notebook</title>
+    <style>
+
+        .mainContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            width: 98vw;
+        }
+        
+        .ArgumentListContainer
+        {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            width: 50vw;
+        }
+
+        .TableHeader
+        {
+            width: 50vw;
+        }
+    </style>
 </head>
 
-<body>
-    <table cellspacing="20">
-        <tr>
-            <td><img width="200px" height="200px" src="images/avatar.png" alt="avatar"></img></td>
-            <td>
-                <h1>Marco Bidogia</h1>
-                <em>This is my notebook project</em>
-            </td>
-        </tr>
-    </table>
-    <a href="FItaToEng/index.html">From Italian to English</a>
+<body class="row justify-content-center overflow-x-hidden">
+    <div class="mainContainer">
+        <table class="mt-2 TableHeader" cellspacing="20">
+            <tr>
+                <td><img width="200px" height="200px" src="images/avatar.png" alt="avatar"></img></td>
+                <td>
+                    <h1>Marco Bidogia</h1>
+                    <em>This is my notebook project</em>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <div class="ArgumentListContainer">
+            <h2>From Italian to English</h2>
+            <ul class="mt-3">
+                <ul>
+                    <li><a href="FItaToEng/All english verbs tense.html">All english verbs and tenses</a></li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
 </body>
 
 </html>
